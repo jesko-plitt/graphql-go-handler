@@ -11,11 +11,11 @@ import (
 	"strings"
 	"testing"
 
-	graphql "github.com/fraym/graphql-go"
-	handler "github.com/fraym/graphql-go-handler"
-	"github.com/fraym/graphql-go/gqlerrors"
-	"github.com/fraym/graphql-go/language/location"
-	"github.com/fraym/graphql-go/testutil"
+	graphql "github.com/jesko-plitt/graphql-go"
+	handler "github.com/jesko-plitt/graphql-go-handler"
+	"github.com/jesko-plitt/graphql-go/gqlerrors"
+	"github.com/jesko-plitt/graphql-go/language/location"
+	"github.com/jesko-plitt/graphql-go/testutil"
 	"github.com/stretchr/testify/assert"
 )
 

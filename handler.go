@@ -9,8 +9,8 @@ import (
 	"net/url"
 	"strings"
 
-	graphql "github.com/fraym/graphql-go"
-	"github.com/fraym/graphql-go/gqlerrors"
+	graphql "github.com/jesko-plitt/graphql-go"
+	"github.com/jesko-plitt/graphql-go/gqlerrors"
 )
 
 const (
@@ -33,15 +33,15 @@ type Handler struct {
 }
 
 type RequestOptions struct {
-	Query         string                 `json:"query" url:"query" schema:"query"`
-	Variables     map[string]interface{} `json:"variables" url:"variables" schema:"variables"`
+	Query         string                 `json:"query"         url:"query"         schema:"query"`
+	Variables     map[string]interface{} `json:"variables"     url:"variables"     schema:"variables"`
 	OperationName string                 `json:"operationName" url:"operationName" schema:"operationName"`
 }
 
 // a workaround for getting`variables` as a JSON string
 type requestOptionsCompatibility struct {
-	Query         string `json:"query" url:"query" schema:"query"`
-	Variables     string `json:"variables" url:"variables" schema:"variables"`
+	Query         string `json:"query"         url:"query"         schema:"query"`
+	Variables     string `json:"variables"     url:"variables"     schema:"variables"`
 	OperationName string `json:"operationName" url:"operationName" schema:"operationName"`
 }
 

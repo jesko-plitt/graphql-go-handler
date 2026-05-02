@@ -1,10 +1,10 @@
-module github.com/fraym/graphql-go-handler
+module github.com/jesko-plitt/graphql-go-handler
 
 go 1.22
 
 require (
-	github.com/fraym/graphql-go v0.1.0
-	github.com/stretchr/testify v1.9.0
+	github.com/jesko-plitt/graphql-go v1.0.0
+	github.com/stretchr/testify v1.11.1
 )
 
 require (
